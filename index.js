@@ -1,6 +1,6 @@
 //To see how the final website should work, run "node solution.js".
 //Make sure you have installed all the dependencies with "npm i".
-//The password is ILoveProgramming
+//The password is ILoveProgramming hehe nope
 import express from"express";
 import bodyParser from"body-parser";
 import {dirname} from"path";
@@ -20,10 +20,10 @@ if(req.body["password"]==="sharvani"){
 res.sendFile(__dirname+"/public/secret.html");
     }
     else{
-        res.sendFiles(__dirname+"/public/index.html");
+        res.sendFile(__dirname+"/public/index.html");
     }
 });
 
 app.listen(port,()=>{
-    console.log("the server in running on port"+port);
+    console.log("the server in running on port : "+port);
 });
